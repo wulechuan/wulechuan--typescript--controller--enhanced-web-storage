@@ -1,5 +1,5 @@
 export interface 范_改良型浏览器存储器_SetItem方法的形制要求 {
-    保质期_以秒计?: null | number;
+    有效期_以秒计?: null | number;
 }
 
 export interface 范_改良型浏览器存储器_GetItem方法的形制要求 {
@@ -10,7 +10,7 @@ export type 范_改良型浏览器存储器_单项<范_原始值 = any> = {
     原始值: 范_原始值;
     时间戳: number;
     时间戳_易读式: string;
-    保质期_以秒计: null | number;
+    有效期_以秒计: null | number;
 };
 
 /**
