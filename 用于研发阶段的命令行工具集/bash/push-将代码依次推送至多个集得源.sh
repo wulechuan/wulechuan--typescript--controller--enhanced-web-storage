@@ -9,10 +9,10 @@ source  './node_modules/@wulechuan/cli-scripts--git-push/源代码/发布的源�
     --git-origin-display-name='吴乐川：码云' \
     --git-origin-display-name-color='red'
 
-吴乐川-集得上推至单个源  --should-skip=false \
-    --git-origin-name='吴乐川：阿里云' \
-    --git-origin-display-name='吴乐川：阿里云' \
-    --git-origin-display-name-color='blue'
+# 吴乐川-集得上推至单个源  --should-skip=false \
+#     --git-origin-name='吴乐川：阿里云' \
+#     --git-origin-display-name='吴乐川：阿里云' \
+#     --git-origin-display-name-color='blue'
 
 吴乐川-集得上推至单个源  --should-skip=false \
     --git-origin-name='吴乐川：GitHub' \
