@@ -1,0 +1,23 @@
+/**
+ * 参阅： https://go.microsoft.com/fwlink/?LinkId=733558
+ */
+
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "command": "pwsh  -Command '.\\用于研发阶段的命令行工具集\\PowerShell\\Push-将代码依次推送至多个集得源.ps1'",
+            "group": "none",
+            "problemMatcher": [],
+            "label": "将代码依次推送至多个集得源（PowerShell）"
+        },
+        {
+            "type": "shell",
+            "command": "bash  -c 'source  ./用于研发阶段的命令行工具集/bash/push-将代码依次推送至多个集得源.sh'",
+            "group": "none",
+            "problemMatcher": [],
+            "label": "将代码依次推送至多个集得源（Bash）"
+        }
+    ]
+}

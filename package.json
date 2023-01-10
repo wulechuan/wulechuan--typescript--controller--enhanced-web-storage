@@ -1,0 +1,58 @@
+{
+    "name": "@wulechuan/controller--enhanced-web-storage",
+    "version": "1.0.0",
+    "description": "此乃吴乐川的《改良型浏览器存储器》。",
+    "author": "吴乐川 <wulechuan@live.com>",
+    "license": "WTFPL",
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+    },
+    "type": "module",
+    "engines": {
+        "node": ">=14.16"
+    },
+    "exports": {
+        ".": "./源代码/编译出的源代码/index.js",
+        "./源代码/原始的源代码/*": "./源代码/原始的源代码/*",
+        "./源代码/编译出的源代码/*": "./源代码/编译出的源代码/*"
+    },
+    "types": "./源代码/原始的源代码/types.d.ts",
+    "scripts": {
+        "审查代码": "eslint  --fix  *.cjs  源代码/原始的源代码/**/*.ts  源代码/编译出的源代码/**/*.js",
+        "构建所有须发布的文件": "rimraf  ./源代码/编译出的源代码    &&    tsc   &&   npm  run  审查代码",
+        "每当制作集得之版本之前": "npm  i    &&    npm  run  构建所有须发布的文件",
+        "start": "tsc  -w",
+        "prepublishOnly": "npm  run  构建所有须发布的文件"
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^5.48.1",
+        "@typescript-eslint/parser": "^5.48.1",
+        "@wulechuan/cli-scripts--git-push": "^6.0.10",
+        "@wulechuan/css-stylus-markdown-themes": "^7.8.3",
+        "eslint": "^8.31.0",
+        "typescript": "^4.9.4"
+    },
+    "homepage": "https://github.com/wulechuan/wulechuan--typescript--controller--enhanced-web-storage#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/wulechuan/wulechuan--typescript--controller--enhanced-web-storage.git"
+    },
+    "bugs": {
+        "url": "https://github.com/wulechuan/wulechuan--typescript--controller--enhanced-web-storage/issues"
+    },
+    "keywords": [
+        "浏览器存储器",
+        "改良型浏览器存储器",
+        "浏览器改良型存储器",
+        "改良型存储器",
+        "数据有保质期",
+        "数据有时间戳",
+        "数据会过期",
+        "可存放复杂结构",
+        "可存放JSON",
+        "WebStorage",
+        "Web Storage",
+        "Storage"
+    ]
+}
