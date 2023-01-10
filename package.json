@@ -1,6 +1,6 @@
 {
     "name": "@wulechuan/controller--enhanced-web-storage",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "此乃吴乐川的《改良型浏览器存储器》。浏览器标准的存储器（`window.localStorage` 与 `window.sessionStorage`）有诸多限制。本品借助 `JSON.stringify` 和 `JSON.parse` 提供改良的存储器，已替代上述两种标准存储器。",
     "author": "吴乐川 <wulechuan@live.com>",
     "license": "WTFPL",
