@@ -9,7 +9,7 @@
         "esModuleInterop": true,
         "allowSyntheticDefaultImports": true,
         "rootDir": "./源代码/原始的源代码",
-        "outDir": "./源代码/编译出的源代码",
+        "outDir": ".",
         "declaration": false,
         "lib": [
             "esnext",
@@ -17,8 +17,9 @@
         ]
     },
     "include": [
-        "源代码/原始的源代码"
-, "源代码/原始的源代码/index.ts"    ],
+        "源代码/原始的源代码",
+        "源代码/原始的源代码/index.ts"
+    ],
     "exclude": [
         "node_modules"
     ]

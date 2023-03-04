@@ -1,6 +1,6 @@
 {
     "name": "@wulechuan/controller--enhanced-web-storage",
-    "version": "1.0.2",
+    "version": "1.1.0",
     "description": "此乃吴乐川的《改良型浏览器存储器》。浏览器标准的存储器（`window.localStorage` 与 `window.sessionStorage`）有诸多限制。本品借助 `JSON.stringify` 和 `JSON.parse` 提供改良的存储器，已替代上述两种标准存储器。",
     "author": "吴乐川 <wulechuan@live.com>",
     "license": "WTFPL",
@@ -13,14 +13,13 @@
         "node": ">=14.16"
     },
     "exports": {
-        ".": "./源代码/编译出的源代码/index.js",
-        "./源代码/原始的源代码/*": "./源代码/原始的源代码/*",
-        "./源代码/编译出的源代码/*": "./源代码/编译出的源代码/*"
+        ".": "./index.js",
+        "./typescript/": "./源代码/原始的源代码/"
     },
     "types": "./源代码/原始的源代码/types.d.ts",
     "scripts": {
-        "审查代码": "eslint  --fix  *.cjs  源代码/原始的源代码/**/*.ts  源代码/编译出的源代码/**/*.js",
-        "构建所有须发布的文件": "rimraf  ./源代码/编译出的源代码    &&    tsc   &&   npm  run  审查代码",
+        "审查代码": "eslint  --fix  *.cjs  源代码/原始的源代码/**/*.ts  index.js",
+        "构建所有须发布的文件": "rimraf  index.js    &&    tsc   &&   npm  run  审查代码",
         "每当制作集得之版本之前": "npm  i    &&    npm  run  构建所有须发布的文件",
         "start": "tsc  -w",
         "prepublishOnly": "npm  run  构建所有须发布的文件"
