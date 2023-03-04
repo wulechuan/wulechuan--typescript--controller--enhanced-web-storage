@@ -8,7 +8,7 @@
         "skipLibCheck": true,
         "esModuleInterop": true,
         "allowSyntheticDefaultImports": true,
-        "rootDir": "./源代码/原始的源代码",
+        "rootDir": ".",
         "outDir": ".",
         "declaration": false,
         "lib": [
@@ -17,8 +17,8 @@
         ]
     },
     "files": [
-        "源代码/原始的源代码/index.ts",
-        "源代码/原始的源代码/types.d.ts"
+        "index.ts",
+        "types.d.ts"
     ],
     "exclude": [
         "node_modules"
