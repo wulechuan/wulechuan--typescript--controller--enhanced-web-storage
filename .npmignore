@@ -14,7 +14,7 @@
 .eslintrc.js
 .eslintrc.cjs
 .markdownlint.json
-tsconfig.json
+# tsconfig.json
 .browserslistrc
 package-lock.json
 

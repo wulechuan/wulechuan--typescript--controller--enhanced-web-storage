@@ -16,9 +16,9 @@
             "dom"
         ]
     },
-    "include": [
-        "源代码/原始的源代码",
-        "源代码/原始的源代码/index.ts"
+    "files": [
+        "源代码/原始的源代码/index.ts",
+        "源代码/原始的源代码/types.d.ts"
     ],
     "exclude": [
         "node_modules"
